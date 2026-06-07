@@ -64,7 +64,7 @@ export default function Hero() {
           {/* ── Left: Text ── */}
           <motion.div
             variants={containerVariants}
-            className="flex flex-col"
+            className="flex flex-col order-2 lg:order-1"
           >
             <motion.div variants={itemVariants} className="mb-6">
               <span className="section-label">
@@ -184,7 +184,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.92, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.35, ease: bezier }}
-              className="hidden lg:flex items-center justify-center"
+              className="flex items-center justify-center order-1 lg:order-2"
             >
               <div className="relative">
                 {/* Outer glow ring */}
@@ -234,10 +234,9 @@ export default function Hero() {
                 {/* Photo */}
                 <div
                   className="relative overflow-hidden rounded-xl"
+                  className="w-[260px] h-[330px] sm:w-[320px] sm:h-[400px] lg:w-[380px] lg:h-[480px]"
                   style={{
                     border: "1px solid rgba(201,168,76,0.2)",
-                    width: "380px",
-                    height: "480px",
                   }}
                 >
                   <Image
@@ -292,7 +291,7 @@ export default function Hero() {
                 <motion.div
                   animate={{ y: [-4, 4, -4] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -right-12 top-12 px-3 py-2 rounded-lg"
+                  className="hidden sm:block absolute -right-12 top-12 px-3 py-2 rounded-lg"
                   style={{
                     background: "var(--surface)",
                     border: "1px solid rgba(201,168,76,0.3)",
@@ -321,7 +320,7 @@ export default function Hero() {
                 <motion.div
                   animate={{ y: [4, -4, 4] }}
                   transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                  className="absolute -left-12 bottom-16 px-3 py-2 rounded-lg"
+                  className="hidden sm:block absolute -left-12 bottom-16 px-3 py-2 rounded-lg"
                   style={{
                     background: "var(--surface)",
                     border: "1px solid rgba(201,168,76,0.3)",
