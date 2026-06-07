@@ -233,8 +233,7 @@ export default function Hero() {
 
                 {/* Photo */}
                 <div
-                  className="relative overflow-hidden rounded-xl"
-                  className="w-[260px] h-[330px] sm:w-[320px] sm:h-[400px] lg:w-[380px] lg:h-[480px]"
+                  className="relative overflow-hidden rounded-xl w-[260px] h-[330px] sm:w-[320px] sm:h-[400px] lg:w-[380px] lg:h-[480px]"
                   style={{
                     border: "1px solid rgba(201,168,76,0.2)",
                   }}
