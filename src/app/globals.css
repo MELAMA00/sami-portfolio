@@ -48,6 +48,8 @@
   --border: #222222;
   --brand-accent: #C9A84C;
   --brand-accent-hover: #E2C074;
+  --accent-secondary: #6FA8C9;
+  --accent-secondary-hover: #8FC0DC;
   --text-primary: #F5F5F5;
   --text-secondary: #888888;
   --text-muted: #555555;
@@ -193,4 +195,13 @@
 @keyframes carousel-scroll {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
+}
+
+/* ── Hide scrollbar on manual drag/snap carousels ── */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

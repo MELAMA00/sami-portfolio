@@ -173,4 +173,5 @@ export const clients: string[] = [
   "Wafacash",
   "Attijariwafa Bank",
   "KFC",
+  "SAROUTY PROPERTIES",
 ];

@@ -64,7 +64,7 @@ export default function About() {
             </p>
 
             <p
-              className="text-base mb-8 leading-relaxed"
+              className="text-base mb-5 leading-relaxed"
               style={{
                 fontFamily: "var(--font-body)",
                 color: "var(--text-secondary)",
@@ -72,6 +72,17 @@ export default function About() {
               }}
             >
               {t.about.bio2}
+            </p>
+
+            <p
+              className="text-base mb-8 leading-relaxed"
+              style={{
+                fontFamily: "var(--font-body)",
+                color: "var(--text-secondary)",
+                lineHeight: 1.85,
+              }}
+            >
+              {t.about.bio3}
             </p>
 
             {/* Approach bullets */}

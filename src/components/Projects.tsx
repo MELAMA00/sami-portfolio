@@ -203,6 +203,56 @@ export default function Projects() {
             </motion.button>
           </motion.div>
         </motion.div>
+
+        {/* Featured case study teaser */}
+        <motion.a
+          href="#sarouty-case-study"
+          onClick={(e) => {
+            e.preventDefault();
+            document.querySelector("#sarouty-case-study")?.scrollIntoView({ behavior: "smooth" });
+          }}
+          variants={fadeUp}
+          whileHover={{ y: -4, borderColor: "var(--accent-secondary)" }}
+          transition={{ duration: 0.2 }}
+          className="group relative flex flex-col sm:flex-row sm:items-center justify-between gap-6 rounded-xl p-7 md:p-8 mb-16 transition-all"
+          style={{
+            background: "var(--surface)",
+            border: "1px solid var(--border)",
+            borderLeft: "3px solid var(--accent-secondary)",
+          }}
+        >
+          <div>
+            <div
+              className="mb-2 text-xs tracking-widest uppercase"
+              style={{ fontFamily: "var(--font-body)", color: "var(--accent-secondary)" }}
+            >
+              {t.caseStudySarouty.teaserLabel}
+            </div>
+            <h3
+              className="mb-2"
+              style={{
+                fontFamily: "var(--font-heading)",
+                fontSize: "1.35rem",
+                fontWeight: 600,
+                color: "var(--text-primary)",
+              }}
+            >
+              SAROUTY PROPERTIES — {t.caseStudySarouty.teaserTitle}
+            </h3>
+            <p
+              className="max-w-[520px] text-sm"
+              style={{ fontFamily: "var(--font-body)", color: "var(--text-muted)" }}
+            >
+              {t.caseStudySarouty.teaserDescription}
+            </p>
+          </div>
+          <span
+            className="shrink-0 inline-flex items-center gap-1.5 text-sm font-semibold transition-transform duration-200 group-hover:translate-x-1"
+            style={{ fontFamily: "var(--font-body)", color: "var(--accent-secondary)" }}
+          >
+            {t.caseStudySarouty.teaserCta}
+          </span>
+        </motion.a>
       </div>
 
       {/* Carousel — full bleed */}
